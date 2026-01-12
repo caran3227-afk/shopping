@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BrewHaven</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            900: '#2C1810',
+                            800: '#3E2723',
+                            700: '#5D4037',
+                            600: '#8D6E63',
+                            500: '#A1887F',
+                            400: '#BCAAA4',
+                            300: '#D7CCC8',
+                            200: '#EFEBE9',
+                            100: '#F5E6CA',
+                            50: '#FAEDCD',
+                        },
+                        brand: {
+                            accent: '#D4A373',
+                            dark: '#1a0f0a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-coffee-50 text-coffee-900 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-coffee-900 border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex-shrink-0 cursor-pointer flex items-center gap-2">
+                    <span class="text-3xl">☕</span>
+                    <span class="font-serif font-bold text-2xl text-white tracking-wider">BREW<span
+                            class="text-brand-accent">HAVEN</span></span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html"
+                            class="text-sm font-medium text-white/80 hover:text-white transition-colors tracking-wide">HOME</a>
+                        <a href="about.html" class="text-sm font-medium text-brand-accent tracking-wide">ABOUT</a>
+                        <a href="contact.html"
+                            class="text-sm font-medium text-white/80 hover:text-white transition-colors tracking-wide">CONTACT</a>
+                        <a href="terms.html"
+                            class="text-sm font-medium text-white/80 hover:text-white transition-colors tracking-wide">TERMS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-20">
+        <!-- Hero -->
+        <div class="bg-coffee-900 py-24 relative overflow-hidden">
+            <!-- Decorative elements -->
+            <div
+                class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand-accent rounded-full blur-3xl opacity-10">
+            </div>
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center">
+                <h1 class="font-serif text-5xl md:text-7xl text-white font-bold mb-6">Our Story</h1>
+                <p class="text-xl text-brand-accent max-w-2xl mx-auto font-light">From a small garage to your favorite
+                    corner.</p>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-4xl mx-auto px-6 py-24">
+            <div class="prose prose-lg prose-coffee mx-auto">
+                <p class="lead text-2xl font-serif italic text-coffee-800 mb-8">
+                    "Coffee is more than a beverage; it is a moment of connection."
+                </p>
+                <p class="mb-6">
+                    Founded in 2024, BrewHaven began with a simple mission: to slow down the world, if only for a few
+                    minutes. We traveled to the highlands of Ethiopia and the volcanic soils of Guatemala to find
+                    farmers who share our passion for quality and sustainability.
+                </p>
+                <img src="./latte.png" alt="Latte Art" class="w-full h-96 object-cover rounded-2xl shadow-xl my-12">
+                <h2 class="font-serif text-3xl font-bold text-coffee-900 mt-12 mb-6">Sustainable Sourcing</h2>
+                <p class="mb-6">
+                    We believe in fair trade not just as a label, but as a practice. We pay our farmers 20% above market
+                    rates to ensure they can invest in their communities and families. Every bean you drink supports a
+                    global ecosystem of care.
+                </p>
+                <h2 class="font-serif text-3xl font-bold text-coffee-900 mt-12 mb-6">The Roasting Process</h2>
+                <p>
+                    Our master roasters treat every batch like a science experiment and an art project combined. We
+                    roast in small batches in our local facility, ensuring that the coffee in your cup was likely green
+                    beans just a few days ago.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-coffee-900 text-white py-12 text-center">
+        <p>&copy; 2024 BrewHaven Coffee. <a href="index.html" class="text-brand-accent hover:underline">Back to Home</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

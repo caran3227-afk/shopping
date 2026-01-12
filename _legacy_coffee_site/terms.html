@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | BrewHaven</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: { 900: '#2C1810', 50: '#FAEDCD' },
+                        brand: { accent: '#D4A373' }
+                    },
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-coffee-50 text-coffee-900 antialiased">
+    <nav class="fixed w-full z-50 bg-coffee-900 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 cursor-pointer">
+                <span class="text-3xl">☕</span>
+                <span class="font-serif font-bold text-2xl text-white tracking-wider">BREW<span
+                        class="text-brand-accent">HAVEN</span></span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white/80 hover:text-white text-sm font-medium">HOME</a>
+                <a href="about.html" class="text-white/80 hover:text-white text-sm font-medium">ABOUT</a>
+                <a href="contact.html" class="text-white/80 hover:text-white text-sm font-medium">CONTACT</a>
+                <a href="terms.html" class="text-brand-accent text-sm font-medium">TERMS</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-20">
+        <div class="max-w-4xl mx-auto px-6 py-24">
+            <h1 class="font-serif text-4xl mb-8 font-bold">Terms of Service</h1>
+            <p class="text-sm text-gray-500 mb-12">Last Updated: January 2024</p>
+
+            <div class="space-y-8 text-gray-700 leading-relaxed">
+                <section>
+                    <h2 class="font-serif text-2xl font-bold text-coffee-900 mb-4">1. Acceptance of Terms</h2>
+                    <p>By accessing and using this website, you accept and agree to be bound by the terms and provision
+                        of this agreement.</p>
+                </section>
+
+                <section>
+                    <h2 class="font-serif text-2xl font-bold text-coffee-900 mb-4">2. Use License</h2>
+                    <p>Permission is granted to temporarily download one copy of the materials (information or software)
+                        on BrewHaven's website for personal, non-commercial transitory viewing only.</p>
+                </section>
+
+                <section>
+                    <h2 class="font-serif text-2xl font-bold text-coffee-900 mb-4">3. Privacy Policy</h2>
+                    <p>Your privacy is important to us. It is BrewHaven's policy to respect your privacy regarding any
+                        information we may collect from you across our website.</p>
+                </section>
+
+                <section>
+                    <h2 class="font-serif text-2xl font-bold text-coffee-900 mb-4">4. Limitations</h2>
+                    <p>In no event shall BrewHaven or its suppliers be liable for any damages (including, without
+                        limitation, damages for loss of data or profit, or due to business interruption) arising out of
+                        the use or inability to use the materials on BrewHaven's website.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-coffee-900 text-white py-12 text-center">
+        <p>&copy; 2024 BrewHaven Coffee. <a href="index.html" class="text-brand-accent hover:underline">Back to Home</a>
+        </p>
+    </footer>
+</body>
+
+</html>
